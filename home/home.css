@@ -110,8 +110,59 @@ header nav {
   color: #efefef;
 }
 
-.graph-menu .items {
-  height: fit-content;
+.container-body .graph-menu {
+  height: 100%;
+}
+
+.graph-menu .item-1 {
+  width: 60%;
+  margin: 10px;
+  background-color: #6379f4;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+
+.graph-menu .item-2 {
+  width: 45%;
+  margin: 10px;
+  background-color: #ffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+.item-2 .item-content {
+  margin: 30px 10px 40px 10px;
+  font-family: "Nunito Sans";
+}
+
+.item-content .item-content-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  color: #3a3d42;
+}
+
+.item-content .trans {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0;
+}
+
+.item-content-name {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  padding-right: 0;
+  padding-left: 10px;
+}
+.item-content-status {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 0;
+  padding-left: 10px;
 }
 
 footer {
