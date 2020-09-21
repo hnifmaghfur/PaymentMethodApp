@@ -106,7 +106,7 @@ footer .contact {
 /* end footer content */
 
 .bar-title {
-  margin: 30px 0 10px 5px;
+  margin: 25px 0 10px 5px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: bold;
@@ -114,11 +114,12 @@ footer .contact {
 }
 
 .bar-detail {
-  margin: 20px 0 10px 5px;
+  margin-top: 15px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
 }
 
 .input-container {
@@ -137,22 +138,22 @@ footer .contact {
 }
 
 .content-value {
-  height: 82px;
+  height: 65px;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 14px;
   margin: 15px 0 auto;
 }
 
 .content-value-top {
-  height: 110px;
+  height: 85px;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 14px;
-  margin: 25px 0 auto;
+  margin: 20px 0 auto;
 }
 
 .img-search {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   margin-left: 20px;
 }
 
@@ -195,6 +196,44 @@ footer .contact {
   text-decoration: none;
 }
 
+.button-next-share {
+  height: 40px;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  border-radius: 10px;
+  outline: none !important;
+  border-color: transparent;
+  background-color: rgba(99, 121, 244, 0.15);
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-img-download {
+  width: 170px;
+  height: 40px;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #6379f4;
+  border-radius: 10px;
+  outline: none !important;
+  border-color: transparent;
+  background-color: rgba(99, 121, 244, 0.15);
+  text-decoration: none;
+}
+
+.btn-text {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
 .form-menu {
   height: 70px;
 }
@@ -230,4 +269,20 @@ footer .contact {
   border-radius: 20px !important;
   margin-left: 15px !important;
   margin-right: 15px !important;
+}
+
+.img-success {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-successful {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.content-img-success {
+  text-align: center;
 }
