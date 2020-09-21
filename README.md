@@ -1,1 +1,1 @@
-# Build in ZWallet - Alternate Payment Method
+# ZWallet - Alternate Payment Method
