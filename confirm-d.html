@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>History</title>
-    <link rel="stylesheet" href="/asset/css/bootstrap.css" />
+    <title>Confirmation</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
-      integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap-custom.css" /> -->
-
-    <link rel="stylesheet" href="asset/css/search.css" />
+    <link rel="stylesheet" href="asset/css/confirmation.css" />
     <link rel="stylesheet" href="asset/css/style.css" />
   </head>
   <body class="bg-third d-flex flex-column justify-content-lg-between">
@@ -95,58 +92,88 @@
           <div class="bg-white rounded-14 h-100">
             <div class="d-flex flex-column px-4 py-2">
               <!-- copy -->
-              <h5 class="text-nuni txt-bold my-3">Search Receiver</h5>
-              <div class="input-container">
-                <img src="asset/history/search.png" alt="" srcset="" />
-                <input type="text" class="input-search ml-2" />
-              </div>
-              <div class="bg-white shadow-sm mt-4 p-3 rounded-14">
-                <a href="confirm-d.html" class="text-decoration-none">
-                  <div class="d-flex flex-row align-items-center">
-                    <img src="/asset/history/1.png" alt="" />
-                    <div class="ml-3">
-                      <div class="text-nuni txt-bold">Samuel Suhi</div>
-                      <div class="small text-nuni">+62 813-8492-9994</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="bg-white shadow-sm mt-4 p-3 rounded-14">
-                <div class="d-flex flex-row align-items-center">
-                  <img src="/asset/history/2.png" alt="" />
-                  <div class="ml-3">
-                    <div class="text-nuni txt-bold">Momo Taro</div>
-                    <div class="small text-nuni">+62 812-4343-6731</div>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-white shadow-sm mt-4 p-3 rounded-14">
-                <div class="d-flex flex-row align-items-center">
-                  <img src="/asset/history/3.png" alt="" />
-                  <div class="ml-3">
-                    <div class="text-nuni txt-bold">Jessica Keen</div>
-                    <div class="small text-nuni">+62 811-3452-5252</div>
-                  </div>
-                </div>
-              </div>
+              <h6 class="text-nuni txt-bold my-3">Transfer To</h6>
               <div class="bg-white shadow-sm my-4 p-3 rounded-14">
                 <div class="d-flex flex-row align-items-center">
-                  <img src="/asset/history/Rectangle 25.png" alt="" />
+                  <img src="/asset/history/1.png" alt="" />
                   <div class="ml-3">
-                    <div class="text-nuni txt-bold">Michael Le</div>
-                    <div class="small text-nuni">+62 810-4224-4613</div>
+                    <div class="text-nuni txt-bold">Samuel Suhi</div>
+                    <div class="small text-nuni">+62 813-8492-9994</div>
                   </div>
                 </div>
               </div>
-
-              <!-- end copy -->
+              <h6 class="text-nuni txt-bold my-2">Details</h6>
+              <div class="bg-white shadow-sm mt-2 pl-4 py-2 rounded-14">
+                <div class="d-flex flex-column">
+                  <div class="small txt-third mb-2">Amount</div>
+                  <h5 class="text-nuni txt-bold">Rp. 100.000</h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-sm mt-2 pl-4 py-2 rounded-14">
+                <div class="d-flex flex-column">
+                  <div class="text-nuni small txt-third mb-2">Balance Left</div>
+                  <h5 class="text-nuni txt-bold">Rp. 20.000</h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-sm mt-2 pl-4 py-2 rounded-14">
+                <div class="d-flex flex-column">
+                  <div class="text-nuni small txt-third mb-2">Date & Time</div>
+                  <h5 class="text-nuni txt-bold">May 11, 2020 - 12.20</h5>
+                </div>
+              </div>
+              <div class="bg-white shadow-sm mt-2 pl-4 py-2 rounded-14">
+                <div class="d-flex flex-column">
+                  <div class="small txt-third mb-2">Notes</div>
+                  <h5 class="text-nuni txt-bold">For buying some socks</h5>
+                </div>
+              </div>
+              <button
+                class="btn bg-primaryy align-self-end mt-4 mb-3 py-2 px-5 text-white rounded-10"
+                data-toggle="modal"
+                data-target="#modal-id"
+              >
+                Continue
+              </button>
             </div>
+
+            <!-- end copy -->
           </div>
         </div>
       </div>
     </div>
+
     <!-- End Content -->
 
+    <div id="modal-id" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
     <nav class="bg-primaryy py-3 mt-3">
       <div class="container">

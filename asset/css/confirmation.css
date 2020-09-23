@@ -1,234 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
-
-body {
-  height: auto;
-  width: 1100px;
+.bg-third {
+  background-color: #e5e5e5;
 }
 
-.container {
-  margin: 0;
+.text-third {
+  color: #7a7886;
 }
 
-/* header content */
-header {
-  height: auto;
-  background-color: #fafcff;
-  overflow: hidden;
+a {
+  color: black;
 }
-header nav {
-  background-color: #ffff;
-  margin-bottom: 5px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+
+.bg-outline-white {
   border: 2px solid white;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  padding: 0 40px auto;
-}
-.logo {
-  margin-left: 20px;
-  font-family: "Nunito Sans";
-  font-weight: 700;
-  font-size: 29px;
-  color: #6379f4;
-}
-.nama {
-  font-family: "Nunito Sans";
-  font-size: 18px;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
-.nama-2 {
-  font-family: "Nunito Sans";
-  font-weight: 400;
-  font-style: normal;
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.container-body {
-  height: 753px;
-  background-color: #fafcff;
+.navigation > ul li.active a {
+  color: blue;
 }
-.container-body .bar {
-  margin: 20px 20px 0 20px;
-  width: 30%;
-  background-color: #ffff;
-  border-radius: 25px;
-  border: 2px solid white;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.bar-menu {
-  margin: 10px 0 auto;
-}
-
-.navbar-menu {
-  text-decoration: none;
-  font-family: "Nunito Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 18px;
-  color: #6379f4;
-}
-
-.container-body .content {
-  margin: 20px 20px 0 0;
-  background-color: white;
-  border-radius: 25px;
-  border: 2px solid white;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-}
-/* end header content */
-
-/* footer content */
-footer {
-  height: 68px;
-  width: auto;
-  background-color: #6379f4;
-}
-
-footer nav {
-  height: 68px;
-  padding: 0 40px auto;
-}
-footer .copyright {
-  font-family: "Nunito Sans";
-  font-weight: 400;
-  font-style: normal;
-  color: #efefef;
-}
-
-footer .contact {
-  font-family: "Nunito Sans";
-  font-weight: 600;
-  font-style: normal;
-  color: #efefef;
-}
-/* end footer content */
-
-/* content */
-.bar-title {
-  margin: 30px 0 10px 5px;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.bar-detail {
-  margin: 20px 0 10px 5px;
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.input-container {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  background-color: rgba(58, 61, 66, 0.1);
-  border-radius: 14px;
-  padding: 0 20px;
-}
-.input-a {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  width: 100%;
-}
-
-.content-value {
-  height: 82px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 14px;
-  margin: 15px 0 auto;
-}
-
-.content-value-top {
-  height: 110px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 14px;
-  margin: 25px 0 auto;
-}
-
-.img-search {
-  height: 70px;
-  width: 70px;
-  margin-left: 20px;
-}
-
-.name-search {
-  font-family: "Nunito Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.no-search {
-  font-family: "Nunito Sans";
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.content-menu {
-  margin-left: 20px;
-  margin-top: 5px;
-}
-
-.button-menu {
-  height: 70px;
-  margin-left: 0 !important;
-}
-
-.button-next {
-  width: 170px;
+.navigation > ul li.active::before {
+  content: "";
+  position: absolute;
+  width: 10px;
   height: 40px;
-  font-family: "Nunito Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  color: white;
-  border-radius: 10px;
-  outline: none !important;
-  border-color: transparent;
-  background-color: #6379f4;
-  text-decoration: none;
-}
-
-.form-menu {
-  height: 70px;
-}
-
-.input-form-menu {
-  width: 60% !important;
-  height: 50px !important;
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: "Nunito Sans";
-  font-weight: 700;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.content-input {
-  height: 100px !important;
-}
-
-.input-bar {
-  height: 100%;
-}
-
-.input-paragraf {
-  font-family: "Nunito Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.input-modal-content {
-  border-radius: 20px !important;
-  margin-left: 15px !important;
-  margin-right: 15px !important;
+  background: blue;
+  left: 14px;
 }

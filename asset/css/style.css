@@ -16,10 +16,23 @@
   font-weight: 700 !important;
 }
 
+.txt-third {
+  color: #7a7886;
+}
+
 .bg-third {
   background-color: #e5e5e5;
 }
 
 .rounded-14 {
   border-radius: 14px;
+}
+
+.rounded-10 {
+  border-radius: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
