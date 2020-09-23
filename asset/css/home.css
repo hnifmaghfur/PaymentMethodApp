@@ -2,6 +2,10 @@
   background-color: #e5e5e5;
 }
 
+.text-third {
+  color: #7a7886;
+}
+
 a {
   color: black;
 }
@@ -25,4 +29,8 @@ a {
 
 .rounded-14 {
   border-radius: 14px;
+}
+
+.rounded-10 {
+  border-radius: 10px;
 }

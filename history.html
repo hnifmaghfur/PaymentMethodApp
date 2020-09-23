@@ -4,257 +4,180 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History</title>
-    <link rel="stylesheet" href="history.css" />
+    <link rel="stylesheet" href="/asset/css/bootstrap.css" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+      integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
       crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <div class="container-xl container">
-      <!-- start header -->
-      <header>
-        <nav class="navbar d-flex bd-highlight">
-          <div class="logo p-2 flex-md-grow-1 bd-highlight align-self-center">
-            Zwallet
-          </div>
-          <img
-            class="p-2 bd-highlight align-self-center"
-            style="height: 100%; width: fit-content"
-            src="../asset/home/fhoto.png"
-            alt=""
-          />
-          <div
-            class="p-2 bd-highlight align-self-center d-flex flex-column bd-highlight"
-          >
-            <div class="nama bd-highlight">Robert Chandler</div>
-            <div class="nama-2 bd-highlight">+62 813 1464 6445</div>
-          </div>
-          <img
-            class="p-2 bd-highlight align-self-center"
-            src="../asset/home/bell.svg"
-            alt=""
-            style="width: fit-content; height: 100%"
-          />
-        </nav>
-      </header>
-      <!-- end header -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-custom.css" /> -->
 
-      <!-- start body -->
-      <div class="container-body">
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="content flex-grow-1 bd-highlight mb-3 container">
-            <div class="bar-title col">Search Receiver</div>
-            <div class="w-100"></div>
-            <div class="col">
-              <div class="input-container">
-                <img src="../asset/history/search.png" alt="" srcset="" />
-                <input type="text" class="input-a" />
-              </div>
+    <link rel="stylesheet" href="asset/css/history.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body class="bg-third d-flex flex-column justify-content-lg-between">
+    <!-- Navbar -->
+    <nav class="bg-white py-4 pl-2">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="text-primaryy m-0 text-nuni txt-bold">ZWallet</h3>
+
+          <div class="d-flex align-items-center">
+            <img src="/asset/home/fhoto.png" />
+
+            <div class="mx-3">
+              <div class="font-weight-bold text-nuni">Robert Chandler</div>
+              <div class="small text-nuni">+62 8139 3877 7946</div>
             </div>
-            <div class="w-100"></div>
-            <div class="col">
-              <div class="content-value d-flex flex-row">
-                <img
-                  src="../asset/history/1.png"
-                  class="img-search"
-                  alt=""
-                  srcset=""
-                />
-                <div class="p-2 d-flex flex-column align-self-center">
-                  <div class="name-search my-2">Samuel Suhi</div>
-                  <div class="no-search">+62 813-8492-9994</div>
+
+            <a href="#">
+              <img src="/asset/home/bell.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Content -->
+    <div class="container my-lg-5 my-4">
+      <div class="row">
+        <div class="col-lg-3 pr-lg-2 pb-lg-0 pb-sm-2 m-lg-0 my-2">
+          <div
+            class="bg-white h-100 navigation d-flex flex-column justify-content-between rounded-14 p-4"
+          >
+            <ul class="m-0 pl-md-3">
+              <li class="d-flex align-items-center py-4 active">
+                <img src="/asset/home/grid.png" />
+                <a href="home.html" class="ml-3 text-nuni"> Dashboard </a>
+              </li>
+
+              <li class="d-flex align-items-center py-4">
+                <img src="/asset/home/arrow-up.png" />
+                <a href="search.html" class="ml-3 text-nuni"> Transfer </a>
+              </li>
+
+              <li class="d-flex align-items-center py-4">
+                <img src="/asset/home/plus.png" />
+                <a href="#" class="ml-3 text-nuni"> Top Up </a>
+              </li>
+
+              <li class="d-flex align-items-center py-4">
+                <img src="/asset/home/user.png" />
+                <a href="#" class="ml-3 text-nuni"> Profile </a>
+              </li>
+            </ul>
+
+            <ul class="m-0 pl-md-3">
+              <li class="d-flex align-items-center py-2">
+                <img src="/asset/home/log-out.png" />
+                <a href="#" class="ml-3 text-nuni"> Logout </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- copy -->
+
+        <div class="col-lg-9 pl-lg-2">
+          <div class="bg-white rounded-14 h-100">
+            <div class="d-flex flex-column px-4 py-2">
+              <h6 class="font-weight-bold my-3">Transaction History</h6>
+              <h6 class="small my-0 text-third">This Week</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center my-4">
+                  <img
+                    src="/asset/history/1.png"
+                    alt=""
+                    height="56px"
+                    width="56px"
+                  />
+                  <div>
+                    <div class="font-weight-bold ml-3">Samuel Suhi</div>
+                    <div class="small ml-3">Transfer</div>
+                  </div>
                 </div>
+                <h5 class="text-success font-weight-bold">+ Rp.50.000</h5>
               </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-              <div class="content-value d-flex flex-row">
-                <img
-                  src="../asset/history/2.png"
-                  class="img-search"
-                  alt=""
-                  srcset=""
-                />
-                <div class="p-2 d-flex flex-column align-self-center">
-                  <div class="name-search my-2">Momo Taro</div>
-                  <div class="no-search">+62 812-4343-6731</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center my-4">
+                  <img
+                    src="/asset/history/logo.png    "
+                    alt=""
+                    height="56px"
+                    width="56px"
+                  />
+                  <div>
+                    <div class="font-weight-bold ml-3">Netflix</div>
+                    <div class="small ml-3">Subscribe</div>
+                  </div>
                 </div>
+                <h5 class="text-danger font-weight-bold">+ Rp.50.000</h5>
               </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-              <div class="content-value d-flex flex-row">
-                <img
-                  src="../asset/history/3.png"
-                  class="img-search"
-                  alt=""
-                  srcset=""
-                />
-                <div class="p-2 d-flex flex-column align-self-center">
-                  <div class="name-search my-2">Jessica Keen</div>
-                  <div class="no-search">+62 811-3452-5252</div>
+              <h6 class="small my-3 text-third">This Month</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center my-4">
+                  <img
+                    src="/asset/history/1.png"
+                    alt=""
+                    height="56px"
+                    width="56px"
+                  />
+                  <div>
+                    <div class="font-weight-bold ml-3">Samuel Suhi</div>
+                    <div class="small ml-3">Transfer</div>
+                  </div>
                 </div>
+                <h5 class="text-success font-weight-bold">+ Rp.50.000</h5>
               </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-              <div class="content-value d-flex flex-row">
-                <img
-                  src="../asset/history/Rectangle 25.png"
-                  class="img-search"
-                  alt=""
-                  srcset=""
-                />
-                <div class="p-2 d-flex flex-column align-self-center">
-                  <div class="name-search my-2">Michael Le</div>
-                  <div class="no-search">+62 810-4224-4613</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-row align-items-center my-4">
+                  <img
+                    src="/asset/history/logo.png    "
+                    alt=""
+                    height="56px"
+                    width="56px"
+                  />
+                  <div>
+                    <div class="font-weight-bold ml-3">Netflix</div>
+                    <div class="small ml-3">Subscribe</div>
+                  </div>
                 </div>
+                <h5 class="text-danger font-weight-bold">+ Rp.50.000</h5>
               </div>
             </div>
           </div>
-          <div class="bar pl-3 pr-2 mb-3">
-            <div class="d-flex flex-column bd-highlight" style="height: 700px">
-              <a
-                href="/dasboard/dasboard.html"
-                class="align-self-baseline"
-                style="text-decoration: none"
-              >
-                <div class="bar-menu p-2 bd-highlight d-flex">
-                  <img
-                    class="bd-highlight align-self-center"
-                    src="../asset/home/grid.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <div
-                    class="navbar-menu bd-highlight align-self-center ml-3 mb-3 mt-3"
-                  >
-                    Dashboard
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/transfer/transfer.html"
-                class="align-self-baseline"
-                style="text-decoration: none"
-              >
-                <div class="bar-menu p-2 bd-highlight d-flex">
-                  <img
-                    class="bd-highlight align-self-center"
-                    src="../asset/home/arrow-up.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <div
-                    class="navbar-menu bd-highlight align-self-center ml-3 mb-3 mt-3"
-                  >
-                    Transfer
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/topUp/topUp.html"
-                class="align-self-baseline"
-                style="text-decoration: none"
-              >
-                <div class="bar-menu p-2 bd-highlight d-flex">
-                  <img
-                    class="bd-highlight align-self-center"
-                    src="../asset/home/plus.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <div
-                    class="navbar-menu bd-highlight align-self-center ml-3 mb-3 mt-3"
-                  >
-                    Top Up
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/profile/profile.html"
-                class="align-self-baseline"
-                style="text-decoration: none"
-              >
-                <div class="bar-menu p-2 bd-highlight d-flex">
-                  <img
-                    class="bd-highlight align-self-center"
-                    src="../asset/home/user.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <div
-                    class="navbar-menu bd-highlight align-self-center ml-3 mb-3 mt-3"
-                  >
-                    Profile
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/index.html"
-                class="mt-auto mb-2 align-self-baseline"
-                style="text-decoration: none"
-              >
-                <div class="bar-menu-bot p-2 bd-highlight d-flex">
-                  <img
-                    class="bd-highlight align-self-center"
-                    src="../asset/home/log-out.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <div
-                    class="navbar-menu bd-highlight align-self-center ml-3 mb-3 mt-3"
-                  >
-                    Logout
-                  </div>
-                </div>
-              </a>
+        </div>
+        <!-- end copy -->
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- footer -->
+    <nav class="bg-primaryy py-3 mt-3">
+      <div class="container">
+        <div
+          class="d-flex justify-content-lg-between flex-column flex-lg-row align-items-center"
+        >
+          <div class="text-white text-nuni">
+            2020 Zwallet. All right reserved.
+          </div>
+          <div class="d-flex flex-column flex-lg-row text-nuni">
+            <div class="text-white px-5 text-nuni">+62 5637 8882 9901</div>
+            <div class="text-white px-5 px-lg-5 text-nuni">
+              contact@zwallet.com
             </div>
           </div>
         </div>
       </div>
+    </nav>
 
-      <!-- end body -->
-
-      <!-- start footer -->
-      <footer>
-        <nav class="navbar d-flex bd-highlight">
-          <div
-            class="copyright p-2 flex-md-grow-1 bd-highlight align-self-center"
-          >
-            2020 Zwallet. All right reserved.
-          </div>
-          <div class="contact p-2 bd-highlight align-self-center">
-            +62 813 1464 6445
-          </div>
-          <div class="contact p-2 bd-highlight align-self-center">
-            contact@zwallet.com
-          </div>
-        </nav>
-      </footer>
-
-      <!-- end footer -->
-    </div>
-
-    <!-- script -->
+    <script src="assets/js/jquery-slim.min.js"></script>
+    <script src="/asset/js/bootstrap.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <!-- end script -->
   </body>
 </html>

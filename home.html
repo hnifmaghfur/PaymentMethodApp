@@ -14,20 +14,21 @@
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-custom.css" /> -->
 
     <link rel="stylesheet" href="asset/css/home.css" />
+    <link rel="stylesheet" href="asset/css/style.css" />
   </head>
   <body class="bg-third d-flex flex-column justify-content-lg-between">
     <!-- Navbar -->
     <nav class="bg-white py-4 pl-2">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h3 class="text-primary m-0">ZWallet</h3>
+          <h3 class="text-primaryy m-0 text-nuni txt-bold">ZWallet</h3>
 
           <div class="d-flex align-items-center">
             <img src="/asset/home/fhoto.png" />
 
             <div class="mx-3">
-              <div class="font-weight-bold">Robert Chandler</div>
-              <div class="small">+62 8139 3877 7946</div>
+              <div class="font-weight-bold text-nuni">Robert Chandler</div>
+              <div class="small text-nuni">+62 8139 3877 7946</div>
             </div>
 
             <a href="#">
@@ -42,87 +43,99 @@
     <!-- Content -->
     <div class="container my-lg-5 my-4">
       <div class="row">
-        <div class="col-lg-3 pr-lg-2">
+        <div class="col-lg-3 pr-lg-2 pb-lg-0 pb-sm-2 m-lg-0 my-2">
           <div
             class="bg-white h-100 navigation d-flex flex-column justify-content-between rounded-14 p-4"
           >
-            <ul class="m-0">
+            <ul class="m-0 pl-md-3">
               <li class="d-flex align-items-center py-4 active">
                 <img src="/asset/home/grid.png" />
-                <a href="#" class="ml-3"> Dashboard </a>
+                <a href="home.html" class="ml-3 text-nuni"> Dashboard </a>
               </li>
 
               <li class="d-flex align-items-center py-4">
                 <img src="/asset/home/arrow-up.png" />
-                <a href="#" class="ml-3"> Transfer </a>
+                <a href="success.html" class="ml-3 text-nuni"> Transfer </a>
               </li>
 
               <li class="d-flex align-items-center py-4">
                 <img src="/asset/home/plus.png" />
-                <a href="#" class="ml-3"> Top Up </a>
+                <a href="#" class="ml-3 text-nuni"> Top Up </a>
               </li>
 
               <li class="d-flex align-items-center py-4">
                 <img src="/asset/home/user.png" />
-                <a href="#" class="ml-3"> Profile </a>
+                <a href="#" class="ml-3 text-nuni"> Profile </a>
               </li>
             </ul>
 
-            <ul class="m-0">
+            <ul class="m-0 pl-md-3">
               <li class="d-flex align-items-center py-2">
                 <img src="/asset/home/log-out.png" />
-                <a href="#" class="ml-3"> Logout </a>
+                <a href="#" class="ml-3 text-nuni"> Logout </a>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg-9 pl-lg-2">
-          <div class="bg-primary rounded-14 p-4">
-            <div class="d-flex justify-content-between">
+          <div class="bg-primaryy rounded-14 p-4">
+            <div
+              class="d-flex flex-lg-row flex-column justify-content-lg-between align-items-center"
+            >
               <div>
-                <div class="my-2 text-white">Balance</div>
-                <h1 class="font-weight-bold text-white my-3">Rp.120.000</h1>
-                <div class="my-2 text-white">+62 8139 3877 7946</div>
+                <div class="my-2 text-white text-nuni">Balance</div>
+                <h1 class="font-weight-bold text-white my-3 text-nuni">
+                  Rp.120.000
+                </h1>
+                <div class="my-2 text-white text-nuni">+62 8139 3877 7946</div>
               </div>
-              <div>
+              <div class="d-flex flex-column">
                 <a
                   href="#"
-                  class="btn bg-outline-white text-white font-weight-bold py-2 d-block mb-2"
+                  class="btn bg-outline-white text-white font-weight-bold py-2 px-4 mb-2 rounded-10"
                 >
-                  <img src="" alt="" /> Transfer
+                  <img
+                    src="/asset/home/arrow-up.png"
+                    alt=""
+                    class="text-nuni"
+                  />
+                  Transfer
                 </a>
                 <a
                   href="#"
-                  class="btn bg-outline-white text-white font-weight-bold py-2 d-block mt-3"
+                  class="btn bg-outline-white text-white font-weight-bold py-2 px-5 mt-3 rounded-10"
                 >
-                  <img src="" alt="" /> Transfer
+                  <img src="/asset/home/plus.png" alt="" class="text-nuni" />
+                  Top Up
                 </a>
               </div>
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-7">
+            <div class="col-lg-7 col-12">
               <div class="bg-white rounded-14 p-4">
                 <div class="row">
                   <div class="col-6">
                     <img src="" alt="" />
-                    <div class="small my-2">Income</div>
-                    <div class="font-weight-bold">Rp.2.120.000</div>
+                    <div class="small my-2 text-nuni">Income</div>
+                    <div class="font-weight-bold text-nuni">Rp.2.120.000</div>
                   </div>
                   <div class="col-6">
                     <img src="" alt="" />
-                    <div class="small my-2">Expense</div>
-                    <div class="font-weight-bold">Rp.1.560.000</div>
+                    <div class="small my-2 text-nuni">Expense</div>
+                    <div class="font-weight-bold text-nuni">Rp.1.560.000</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col1-12">
               <div class="bg-white rounded-14 p-4">
                 <div class="d-flex align-items-center justify-content-between">
-                  <div class="font-weight-bold">Transaction History</div>
-                  <a href="#" class="small text-primary">See all</a>
+                  <div class="font-weight-bold text-nuni">
+                    Transaction History
+                  </div>
+                  <a href="#" class="small text-primaryy text-nuni">See all</a>
                 </div>
                 <div
                   class="d-flex justify-content-between align-items-center py-3"
@@ -135,11 +148,13 @@
                       alt=""
                     />
                     <div class="ml-2">
-                      <div class="font-weight-bold">Samuel Suhi</div>
-                      <div class="small mt-2">Transfer</div>
+                      <div class="font-weight-bold text-nuni">Samuel Suhi</div>
+                      <div class="small mt-2 text-nuni">Transfer</div>
                     </div>
                   </div>
-                  <div class="text-success font-weight-bold">+Rp.50.000</div>
+                  <div class="text-success font-weight-bold text-nuni">
+                    +Rp.50.000
+                  </div>
                 </div>
                 <div
                   class="d-flex justify-content-between align-items-center py-3"
@@ -153,11 +168,13 @@
                       class="p-1"
                     />
                     <div class="ml-2">
-                      <div class="font-weight-bold">Netflix</div>
-                      <div class="small mt-2">Subscription</div>
+                      <div class="font-weight-bold text-nuni">Netflix</div>
+                      <div class="small mt-2 text-nuni">Subscription</div>
                     </div>
                   </div>
-                  <div class="text-danger font-weight-bold">-Rp149.000</div>
+                  <div class="text-danger font-weight-bold text-nuni">
+                    -Rp149.000
+                  </div>
                 </div>
                 <div
                   class="d-flex justify-content-between align-items-center py-3"
@@ -170,11 +187,15 @@
                       alt=""
                     />
                     <div class="ml-2">
-                      <div class="font-weight-bold">Christine Mar...</div>
-                      <div class="small mt-2">Transfer</div>
+                      <div class="font-weight-bold text-nuni">
+                        Christine Mar...
+                      </div>
+                      <div class="small mt-2 text-nuni">Transfer</div>
                     </div>
                   </div>
-                  <div class="text-success font-weight-bold">+Rp150.000</div>
+                  <div class="text-success font-weight-bold text-nuni">
+                    +Rp150.000
+                  </div>
                 </div>
                 <div
                   class="d-flex justify-content-between align-items-center py-3"
@@ -188,11 +209,13 @@
                       class="p-1"
                     />
                     <div class="ml-2">
-                      <div class="font-weight-bold">Adobe Inc.</div>
-                      <div class="small mt-2">Subscription</div>
+                      <div class="font-weight-bold text-nuni">Adobe Inc.</div>
+                      <div class="small mt-2 text-nuni">Subscription</div>
                     </div>
                   </div>
-                  <div class="text-success font-weight-bold">-Rp249.000</div>
+                  <div class="text-success font-weight-bold text-nuni">
+                    -Rp249.000
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,13 +226,19 @@
     <!-- End Content -->
 
     <!-- footer -->
-    <nav class="bg-primary py-3 mt-3">
+    <nav class="bg-primaryy py-3 mt-3">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="text-white">2020 Zwallet. All right reserved.</div>
-          <div class="d-flex">
-            <div class="text-white px-5">+62 5637 8882 9901</div>
-            <div class="text-white">contact@zwallet.com</div>
+        <div
+          class="d-flex justify-content-lg-between flex-column flex-lg-row align-items-center"
+        >
+          <div class="text-white text-nuni">
+            2020 Zwallet. All right reserved.
+          </div>
+          <div class="d-flex flex-column flex-lg-row text-nuni">
+            <div class="text-white px-5 text-nuni">+62 5637 8882 9901</div>
+            <div class="text-white px-5 px-lg-5 text-nuni">
+              contact@zwallet.com
+            </div>
           </div>
         </div>
       </div>

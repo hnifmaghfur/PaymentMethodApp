@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+.bg-primaryy {
+  background-color: #6379f4;
+}
+
+.text-primaryy {
+  color: #6379f4;
+}
+
+.text-nuni {
+  font-family: "Nunito Sans";
+}
+
+.txt-bold {
+  font-weight: 700 !important;
+}
+
+.bg-third {
+  background-color: #e5e5e5;
+}
+
+.rounded-14 {
+  border-radius: 14px;
+}
