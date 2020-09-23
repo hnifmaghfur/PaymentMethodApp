@@ -1,0 +1,28 @@
+.bg-third {
+  background-color: #e5e5e5;
+}
+
+a {
+  color: black;
+}
+
+.bg-outline-white {
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.navigation > ul li.active a {
+  color: blue;
+}
+.navigation > ul li.active::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: blue;
+  left: 14px;
+}
+
+.rounded-14 {
+  border-radius: 14px;
+}
