@@ -41,3 +41,7 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.bg-white10 {
+  background-color: rgba(99, 121, 244, 0.15);
+}
