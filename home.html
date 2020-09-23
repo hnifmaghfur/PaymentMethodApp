@@ -139,11 +139,14 @@
                     <div class="small my-2 text-nuni">Expense</div>
                     <div class="font-weight-bold text-nuni">Rp.1.560.000</div>
                   </div>
+                  <div class="mt-5 p-4">
+                    <canvas id="canvas" class="w-100"></canvas>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col1-12">
-              <div class="bg-white rounded-14 p-4">
+            <div class="col-lg-5 col-12">
+              <div class="bg-white rounded-14 px-4 pt-4 pb-5">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="font-weight-bold text-nuni">
                     Transaction History
@@ -259,12 +262,67 @@
       </div>
     </nav>
 
-    <script src="assets/js/jquery-slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="/asset/js/chart.js"></script>
+    <script>
+      const color = Chart.helpers.color;
+      const barChartData = {
+        labels: ["Sat", "Sun", "Mon", "Tue", "Wen", "Thu", "Fri"],
+        datasets: [
+          {
+            maxBarThickness: 20,
+            label: "Balance",
+            backgroundColor: [
+              "#6379F4",
+              "#6379F4",
+              "#9DA6B5",
+              "#9DA6B5",
+              "#9DA6B5",
+              "#6379F4",
+              "#9DA6B5",
+            ],
+            borderColor: "#fff",
+            data: [9, 3, 5, 7, 4, 8, 6],
+          },
+        ],
+      };
+
+      window.onload = function () {
+        const ctx = document.getElementById("canvas").getContext("2d");
+        window.myBar = new Chart(ctx, {
+          type: "bar",
+          data: barChartData,
+          options: {
+            legend: {
+              display: false,
+            },
+            responsive: true,
+            scales: {
+              xAxes: [
+                {
+                  gridLines: {
+                    lineWidth: 0,
+                    display: false,
+                  },
+                },
+              ],
+              yAxes: [
+                {
+                  ticks: {
+                    display: false,
+                    min: 0,
+                  },
+                  gridLines: {
+                    lineWidth: 0,
+                    display: false,
+                  },
+                },
+              ],
+            },
+          },
+        });
+      };
+    </script>
     <script src="/asset/js/bootstrap.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
