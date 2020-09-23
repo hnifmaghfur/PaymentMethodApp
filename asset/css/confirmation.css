@@ -26,3 +26,14 @@ a {
   background: blue;
   left: 14px;
 }
+
+.input-modal {
+  height: 55px;
+  width: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
