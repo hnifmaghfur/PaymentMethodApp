@@ -6,4 +6,4 @@ please run this file to see ZWallet :
 `index.html`
 
 or you can visit my website in [netlify]
-[netlify]: https://maghfur-inc.netlify.app/
+[netlify]: (https://maghfur-inc.netlify.app/)
