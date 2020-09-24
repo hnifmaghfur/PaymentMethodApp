@@ -5,5 +5,4 @@ Zwallet is an application that focussing in banking needs for all users in the w
 please run this file to see ZWallet :
 `index.html`
 
-or you can visit my website in [netlify]
-[netlify]: (https://maghfur-inc.netlify.app/)
+or you can visit my website in [netlify](https://maghfur-inc.netlify.app/).
